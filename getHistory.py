@@ -11,4 +11,7 @@ def getHistory(pc,delta,gran,prod):
         dt.append(hist[i][0]-startTime)
         close.append(hist[i][4])
         vol.append(hist[i][5])
+    dt.reverse()
+    close.reverse()
+    vol.reverse()
     return [dt,close,vol]
